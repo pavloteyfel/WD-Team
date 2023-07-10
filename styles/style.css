@@ -618,6 +618,8 @@ html {
   box-sizing: inherit;
 }
 
+
+/* css carousel  source: https://frontendscript.com/responsive-css-only-carousel-slider/ */
 .carousel {
   width: 88%;
   margin-left: auto;
