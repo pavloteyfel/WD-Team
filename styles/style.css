@@ -149,6 +149,11 @@ section a {
     object-fit: cover;
 }
 
+/* White backrgound for ticket type dropdown */
+#ticket-type {
+  background-color: #fff;
+}
+
 
 /* Give same design elements to all row types. Shadow and curly borders with orange borders on the sides */
 .card,
