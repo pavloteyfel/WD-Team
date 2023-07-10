@@ -573,22 +573,18 @@ ul {
     animation: fadeIn 0.8s ease-in-out forwards;
 }
 
-/* Overlay with "New!" text for some images */
-.new-badge {
-    position: relative;
+/* Overlay class for logo */
+.logo-badge {
+  position: relative;
 }
 
-.new-badge .badge {
-    height: 50px;
-    position: absolute;
-    top: -20px;
-    right: 10px;
-    padding: 5px 10px;
-    background: #D1A7C9;
-    color: #ffffff;
-    font-weight: bold;
-
-    z-index: 100; /* Ensures the badge appears above the image */
+.logo-badge .dragon-logo {
+  height: 50px;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  padding: 5px 10px;
+  z-index: 100; /* Ensures the badge appears above the image */
 }
 
 html {
