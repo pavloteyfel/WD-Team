@@ -149,6 +149,11 @@ section a {
     object-fit: cover;
 }
 
+/* White backrgound for ticket type dropdown */
+#ticket-type {
+  background-color: #fff;
+}
+
 
 /* Give same design elements to all row types. Shadow and curly borders with orange borders on the sides */
 .card,
@@ -455,7 +460,6 @@ select {
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-    font-size: 190px;
 }
 
 .park-map h2 {
@@ -539,6 +543,7 @@ ul {
 
 .section-header {
     text-align: center;
+    margin-top: 60px;
 }
 
 .section-header h2 {
@@ -573,23 +578,37 @@ ul {
     animation: fadeIn 0.8s ease-in-out forwards;
 }
 
-/* Overlay with "New!" text for some images */
-.new-badge {
-    position: relative;
+/* Overlay class for logo */
+.logo-badge {
+  position: relative;
 }
 
-.new-badge .badge {
-    height: 50px;
-    position: absolute;
-    top: -20px;
-    right: 10px;
-    padding: 5px 10px;
-    background: #D1A7C9;
-    color: #ffffff;
-    font-weight: bold;
-
-    z-index: 100; /* Ensures the badge appears above the image */
+.logo-badge .dragon-logo {
+  height: 50px;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  padding: 5px 10px;
+  z-index: 100; /* Ensures the badge appears above the image */
 }
+
+.dragon-logo img {
+  animation: float 2s ease-in-out infinite;
+  width: 125px;
+}
+
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 
 html {
   box-sizing: border-box;
@@ -599,6 +618,8 @@ html {
   box-sizing: inherit;
 }
 
+
+/* css carousel  source: https://frontendscript.com/responsive-css-only-carousel-slider/ */
 .carousel {
   width: 88%;
   margin-left: auto;

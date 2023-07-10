@@ -11,7 +11,7 @@
     <!-- Meta data for SEO -->
     <meta name="author" content="Team 32">
     <meta name="refresh" content="600">
-    <meta name="keywords" content="theme park, adnveture park">
+    <meta name="keywords" content="theme park, adventure park">
     <meta name="description" content="Fantasy Theme Park Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
@@ -29,8 +29,8 @@
                 <ul>
                     <li><a href="index.html"><i class="fa-solid fa-house"></i> <span class="menu-text"> Home</span></a>
                     </li>
-                    <li><a href="booking.html"><i class="fa-solid fa-circle-info"></i> <span
-                                class="menu-text"> Booking</span></a></li>
+                    <li><a href="booking.html"><i class="fa-solid fa-circle-info"></i> <span class="menu-text"></span>
+                                Booking</span></a></li>
                     <li><a href="attractions-services.html"><i class="fa-solid fa-binoculars"></i> <span
                                 class="menu-text"> Attractions &
                                 Services</span></a></li>
@@ -39,8 +39,9 @@
         </header>
         <!-- Main part of a website with different sections -->
         <div class="main">
-            <div class="new-badge">
-                <div class="badge">Dragon LOGO</div>
+            <div class="logo-badge">
+                <div class="dragon-logo"><img src="images/dragon.svg"></div>
+                <!-- source: https://freesvg.org/green-dragon-silhouette -->
                 <!-- Hero section with option to buy tickets -->
             </div>
             <div class="hero">
@@ -51,6 +52,10 @@
                     <h1>Fantasy Forest Theme Park</h1>
                 </div>
             </div>
+
+            <!-- Dummy div tag for rendering the next section correctly -->
+            <div id="make_it_your_own"></div>
+
             <!-- Header of events and offers section -->
             <section class="row-type-c section-header">
                 <h2><i class="fa-solid fa-ticket"></i> Make It Your Own</h2>
@@ -72,10 +77,9 @@
                     <div class="form-group">
                         <label for="ticket-type">Ticket Type:</label>
                         <select id="ticket-type" name="ticket_type" required>
-                            <option value="adult">Forest</option>
-                            <option value="child">Sea</option>
-                            <option value="senior">Desert</option>
-                            <option value="student">Hills</option>
+                            <option value="day">Day Pass</option>
+                            <option value="seasonal">Seasonal Pass</option>
+                            <option value="preium">Fantasy Premium Memebership</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -142,11 +146,13 @@
                 </div>
                 <div>
                     <h2 class="center"><i class="fa-solid fa-circle-exclamation"></i> About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere suscipit aliquid quae eaque
-                        voluptate aperiam illum nesciunt nulla doloremque, ex voluptates tempora dolorem reiciendis
-                        excepturi cupiditate tenetur reprehenderit unde animi quisquam molestiae natus! Labore,
-                        asperiores itaque? Voluptatem quaerat accusantium ex eligendi. Sunt, voluptates ut maxime optio
-                        ratione facere atque quo.</p>
+                    <p>Welcome to our enchanting Fantasy Forest Theme Park, a magical world where reality blurs with the
+                        realm of fantasy. Immerse yourself in unique experiences, from thrilling rollercoaster rides
+                        like Phoenix's Fire to tranquil retreats in our Treehouse at the Edge of Enchantment. We cater
+                        to families, travellers, cosplayers, event planners, and all who seek a unique, enchanting
+                        experience. Our inclusive, accessible park features comprehensive services including translation
+                        services, making your visit truly magical. Join us for an unforgettable journey through our
+                        mystical forest. Your adventure awaits!</p>
                 </div>
             </section>
             <!-- Footer of a website, contains links, contact data and social links -->
