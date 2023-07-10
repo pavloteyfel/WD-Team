@@ -587,6 +587,24 @@ ul {
   z-index: 100; /* Ensures the badge appears above the image */
 }
 
+.dragon-logo img {
+  animation: float 2s ease-in-out infinite;
+  width: 125px;
+}
+
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
 html {
   box-sizing: border-box;
 }
