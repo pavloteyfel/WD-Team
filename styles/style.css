@@ -161,7 +161,6 @@ section a {
 
 /* Give same design elements to all row types. Shadow and curly borders with orange borders on the sides */
 .card,
-.park-info,
 .row-type-a,
 .row-type-b,
 .row-type-c,
@@ -420,8 +419,7 @@ nav li:hover::before {
     margin-top: 0;
 }
 
-.form-group,
-.form-group-button {
+.form-group {
     display: inline-block;
     margin: 0 1rem 1rem;
 }
@@ -447,25 +445,6 @@ select {
     }
 }
 
-.animate-character {
-    text-transform: uppercase;
-    font-weight: bold;
-    background-image: linear-gradient(-225deg,
-            #D1A7C9 0%,
-            #5D8940 29%,
-            #94BE99 67%,
-            #FEF3FD 100%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-}
-
 .park-map h2 {
     text-align: center;
     margin-top: 0;
@@ -480,10 +459,6 @@ select {
     width: 100%;
     border-radius: 5px;
     display: inline-block;
-}
-
-.park-info {
-    text-align: left;
 }
 
 .info-container {
@@ -505,24 +480,9 @@ select {
     margin-right: 0;
 }
 
-.park-info h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
 
-.park-info h2 {
-    margin-top: 0;
-    text-align: center;
-}
-
-.park-info p,
 ul {
     text-align: left;
-}
-
-.park-info ul {
-    list-style: disc;
-    padding-left: 20px;
 }
 
 .faq-section {
@@ -555,18 +515,6 @@ ul {
     font-size: 50px;
 }
 
-.page-header {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #D1A7C9;
-}
-
-.page-header h1 {
-    font-size: 40px;
-    color: #fff
-}
-
 /* Fade in animation for page headers */
 @keyframes fadeIn {
     0% {
@@ -575,11 +523,6 @@ ul {
     100% {
         opacity: 1;
     }
-}
-
-.page-header {
-    opacity: 0;
-    animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 /* Overlay class for logo */
@@ -774,24 +717,8 @@ html {
   white-space: normal;
 }
 
-.carousel__item--desktop-in-1 {
-  width: 100%;
-}
-
-.carousel__item--desktop-in-2 {
-  width: 50%;
-}
-
 .carousel__item--desktop-in-3 {
   width: 33.3333333333%;
-}
-
-.carousel__item--desktop-in-4 {
-  width: 25%;
-}
-
-.carousel__item--desktop-in-5 {
-  width: 20%;
 }
 
 .carousel-container {
@@ -840,16 +767,8 @@ html {
     padding-right: 48px;
   }
 
-  .carousel__item--tablet-in-1 {
-    width: 90%;
-  }
-
   .carousel__item--tablet-in-2 {
     width: 45%;
-  }
-
-  .carousel__item--tablet-in-3 {
-    width: 30%;
   }
 }
 @media screen and (max-width: 650px) {
@@ -860,13 +779,5 @@ html {
 
   .carousel__item--mobile-in-1 {
     width: 90%;
-  }
-
-  .carousel__item--mobile-in-2 {
-    width: 45%;
-  }
-
-  .carousel__item--mobile-in-3 {
-    width: 30%;
   }
 }
