@@ -141,6 +141,10 @@ section a {
   object-fit: cover;
 }
 
+.card-2 p {
+  min-height: 140px;
+}
+
 /* Correct image sizes inside card */
 .card img {
     width: 100%;
