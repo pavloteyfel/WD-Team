@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Head details -->
-
 <head>
-    <title>Fantasy Forest Theme Park - Attractions & Services</title>
+    <title>Fantasy Forest Theme Park - Home</title>
     <meta charset="utf-8">
+
     <!-- prevent icon requests -->
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
     <!-- Meta data for SEO -->
     <meta name="author" content="Team 32">
     <meta name="refresh" content="600">
     <meta name="keywords" content="theme park, adventure park">
     <meta name="description" content="Fantasy Theme Park Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS and JS -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
 </head>
@@ -21,6 +23,7 @@
 <body>
     <!-- This is the container that holds the page's content -->
     <div class="container">
+
         <!-- Header that contains logo and navigation bar -->
         <header>
             <nav>
@@ -35,15 +38,14 @@
                 </ul>
             </nav>
         </header>
+
         <!-- Main part of a website with different sections. Every section has identation -->
         <div class="main">
             <div class="logo-badge">
                 <div class="dragon-logo"><img src="images/dragon.svg" alt="Dragon Logo"></div>
                 <!-- source: https://freesvg.org/green-dragon-silhouette -->
-                <!-- Hero section with option to buy tickets -->
             </div>
             <div class="hero">
-
                 <img src="images/hero_cover2.jpg"
                     alt="Hero Cover"><!-- source: https://unsplash.com/photos/GZc4fnQsaWQ -->
                 <div class="hero-overlay">
@@ -51,14 +53,15 @@
                 </div>
             </div>
 
-            <!-- Dummy div tag for rendering the next section correctly -->
+            <!-- Dummy div tag for rendering the next section correctly when referenced -->
             <div id="choose_your_fun"></div>
 
-            <!-- Second section, header of all attractions  -->
+            <!-- Header of all attractions  -->
             <section class="row-type-c section-header">
                 <h2> <i class="fa-solid fa-eye"></i> Choose Your Fun</h2>
             </section>
-            <!-- Third section, contains a single row - text with image -->
+
+            <!-- Carousel of all attractions, heavy usage of css magic, this implementation based on https://medium.com/carwow-product-engineering/making-a-carousel-component-without-javascript-f7c68e3e6f8b -->
             <div class='carousel-container'>
                 <div class='carousel'>
                     <input checked='checked' class='carousel__activator' id='carousel-slide-activator-1' name='carousel'
@@ -85,6 +88,7 @@
                     </div>
                     <div class='carousel__screen'>
                         <div class='carousel__track'>
+                            <!-- First visible card in the carousel -->
                             <div
                                 class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                                 <div class='card-2'>
@@ -97,6 +101,7 @@
 
                                 </div>
                             </div>
+                            <!-- Second visible card in the carousel -->
                             <div
                                 class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                                 <div class='card-2'>
@@ -110,6 +115,7 @@
                                     </p>
                                 </div>
                             </div>
+                            <!-- Third visible card in the carousel -->
                             <div
                                 class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                                 <div class='card-2'>
@@ -122,6 +128,7 @@
                                     </p>
                                 </div>
                             </div>
+                            <!-- Fourth hidden card in the carousel -->
                             <div
                                 class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                                 <div class='card-2'>
@@ -133,6 +140,7 @@
                                     </p>
                                 </div>
                             </div>
+                            <!-- Fith hidden card in the carousel -->
                             <div
                                 class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                                 <div class='card-2'>
@@ -144,6 +152,7 @@
                                     </p>
                                 </div>
                             </div>
+                            <!-- Sixth hidden card in the carousel -->
                             <div
                                 class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                                 <div class='card-2'>
@@ -156,6 +165,7 @@
                                     </p>
                                 </div>
                             </div>
+                            <!-- Seventh hidden card in the carousel -->
                             <div
                                 class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                                 <div class='card-2'>
@@ -168,6 +178,7 @@
                                     </p>
                                 </div>
                             </div>
+                            <!-- Eighth hidden card in the carousel -->
                             <div
                                 class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                                 <div class='card-2'>
@@ -179,6 +190,7 @@
                                     </p>
                                 </div>
                             </div>
+                            <!-- Ninth hidden card in the carousel -->
                             <div
                                 class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                                 <div class='card-2'>
@@ -194,11 +206,12 @@
                 </div>
             </div>
 
-            <!-- Sixth section, header of all services  -->
+            <!-- Header of all services  -->
             <section class="row-type-c section-header">
                 <h2><i class="fa-solid fa-bell-concierge"></i> Services</h2>
             </section>
-            <!-- Seventh section, contains 3 cards - only text -->
+
+            <!-- Section contains 3 cards - only text -->
             <section class="row-type-b">
                 <div>
                     <h4><i class="fa-solid fa-leaf"></i> Accessibility</h4>
@@ -221,7 +234,7 @@
                     <a href="#"><i class="fa-solid fa-link"></i> Learn More</a>
                 </div>
             </section>
-            <!-- Eighth section, a single row, text with image  -->
+            <!-- A section, a single row, text with image  -->
             <section class="row-type-a">
                 <div>
                     <h4><i class="fa-solid fa-leaf"></i> Seasonal events and special offers</h4>
@@ -236,6 +249,7 @@
                 </div>
             </section>
 
+            <!-- Section contains 3 cards - only text -->
             <section class="row-type-b">
                 <div>
                     <h4><i class="fa-solid fa-leaf"></i> Cash Facilities</h4>
@@ -273,13 +287,13 @@
                 </div>
             </section>
 
-            <!-- Sixth section, header of all services  -->
+            <!-- Header for park rules  -->
             <section class="row-type-c section-header">
                 <h2><i class="fa-solid fa-bell-concierge"></i> Lore Of The Land</h2>
             </section>
 
 
-            <!-- Third section about events and offers, contains a single row - image with text -->
+            <!-- Simple section, text with an image -->
             <section class="row-type-a">
                 <div>
                     <img src="images/laws.jpg" alt="Castle"><!-- source: https://unsplash.com/photos/N56O8DmT1JM -->
@@ -296,11 +310,12 @@
                 </div>
             </section>
 
-            <!-- Sixth section, header of all services  -->
+            <!-- Header section for other services  -->
             <section class="row-type-c section-header">
                 <h2><i class="fa-solid fa-bell-concierge"></i> Hidden Magic</h2>
             </section>
-            <!-- Ninth section about events, only text  -->
+            
+            <!-- Simple section with text -->
             <section class="row-type-c">
                 <h4><i class="fa-solid fa-leaf"></i> Event Spaces & Group Packages</h4>
                 <p>Our park offers a variety of event spaces and group packages for event planners and coordinators.
@@ -308,7 +323,8 @@
                     more information and to book your event today!</p>
                 <a href="#"><i class="fa-solid fa-link"></i> Contact Us</a>
             </section>
-            <!-- Tenth section about job listings, only text  -->
+            
+            <!-- Section about job listings, only text  -->
             <section class="row-type-c">
                 <h4><i class="fa-solid fa-leaf"></i> Job Listings & Application Process</h4>
                 <p>Interested in joining our team? We're always looking for enthusiastic and dedicated individuals to
@@ -317,7 +333,8 @@
             </section>
 
         </div>
-        <!-- Footer of a website, contains links, contact data and social links -->
+
+        <!-- Footer of a website, divided into 3 parts. Contains links, contact data and social links -->
         <footer>
             <!-- General links -->
             <div class="footer-links">

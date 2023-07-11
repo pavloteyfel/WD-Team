@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Head details -->
-
 <head>
-    <title>Fantasy Forest Theme Park - Attractions & Services</title>
+    <title>Fantasy Forest Theme Park - Home</title>
     <meta charset="utf-8">
+    
     <!-- prevent icon requests -->
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
     <!-- Meta data for SEO -->
     <meta name="author" content="Team 32">
     <meta name="refresh" content="600">
     <meta name="keywords" content="theme park, adventure park">
     <meta name="description" content="Fantasy Theme Park Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS and JS -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
-    <!-- Custom script to fix map coordinates when image is resized -->
-    <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
     <!-- This is the container that holds the page's content -->
     <div class="container">
+
         <!-- Header that contains logo and navigation bar -->
         <header>
             <nav>
@@ -37,15 +38,14 @@
                 </ul>
             </nav>
         </header>
+
         <!-- Main part of a website with different sections -->
         <div class="main">
             <div class="logo-badge">
                 <div class="dragon-logo"><img src="images/dragon.svg" alt="Dragon Logo"></div>
                 <!-- source: https://freesvg.org/green-dragon-silhouette -->
-                <!-- Hero section with option to buy tickets -->
             </div>
             <div class="hero">
-
                 <img src="images/hero_cover2.jpg"
                     alt="Hero Cover"><!-- source: https://unsplash.com/photos/GZc4fnQsaWQ -->
                 <div class="hero-overlay">
@@ -53,15 +53,15 @@
                 </div>
             </div>
 
-            <!-- Dummy div tag for rendering the next section correctly -->
+            <!-- Dummy div tag for rendering the next section correctly when referenced -->
             <div id="make_it_your_own"></div>
 
-            <!-- Header of events and offers section -->
+            <!-- Header of ticket form section -->
             <section class="row-type-c section-header">
                 <h2><i class="fa-solid fa-ticket"></i> Make It Your Own</h2>
             </section>
 
-            <!-- First section with an option to buy tickets -->
+            <!-- Ticket form section -->
             <section class="ticket-purchase">
                 <h2><i class="fa-solid fa-ticket"></i> Purchase Tickets</h2>
                 <!-- A simple form for initiating ticket purchase process -->
@@ -89,13 +89,14 @@
                 </form>
             </section>
 
-            <!-- Fourth section about park map, a single row - image -->
+            <!-- Park interactive map -->
             <section class="row-type-c">
                 <div class="park-map">
                     <h2><i class="fa-solid fa-map"></i> Lay Of The Land</h2>
                     <!-- img source: https://www.thelostisland.com/webres/Image/APP-MAP-ONLY-1280x850.jpg -->
                     <img id="image-map" src="images/map_points.jpg" alt="Park Map" usemap="#park-map-layout">
 
+                    <!-- this is the map layout with clickable areas -->
                     <map name="park-map-layout">
                         <area alt="Spellbound Market" title="Pool" href="attractions-services.html" coords="861,186,20"
                             shape="circle">
@@ -116,7 +117,8 @@
                     </map>
                 </div>
             </section>
-            <!-- Fifth section about FAQ -->
+
+            <!-- FAQ related section, arranged in a row -->
             <section class="faq-section">
                 <h2><i class="fa-solid fa-circle-question"></i> FAQ</h2>
                 <div class="faq">
@@ -139,7 +141,8 @@
                         App Store or Google Play Store.</p>
                 </div>
             </section>
-            <!-- About us section  -->
+
+            <!-- About us section, card layout: image + text  -->
             <section class="row-type-a">
                 <div>
                     <img src="images/aboutus.jpg"
@@ -156,7 +159,8 @@
                         mystical forest. Your adventure awaits!</p>
                 </div>
             </section>
-            <!-- Footer of a website, contains links, contact data and social links -->
+
+            <!-- Footer of a website, divided into 3 parts. Contains links, contact data and social links -->
             <footer>
                 <!-- General links -->
                 <div class="footer-links">

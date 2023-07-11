@@ -815,34 +815,6 @@ html {
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
 }
 
-.carousel__item:nth-child(1) .demo-content {
-  background-color: #216485;
-}
-
-.carousel__item:nth-child(2) .demo-content {
-  background-color: #216485;
-}
-
-.carousel__item:nth-child(3) .demo-content {
-  background-color: #216485;
-}
-
-.carousel__item:nth-child(4) .demo-content {
-  background-color: #216485;
-}
-
-.carousel__item:nth-child(5) .demo-content {
-  background-color: #216485;
-}
-
-.carousel__item:nth-child(6) .demo-content {
-  background-color: #216485;
-}
-
-.carousel__item:nth-child(7) .demo-content {
-  background-color: #216485;
-}
-
 @media screen and (max-width: 1023px) {
   .carousel {
     padding-left: 0;
